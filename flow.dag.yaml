@@ -14,7 +14,7 @@ nodes:
   source:
     type: package_with_prompt
     path: payslip.jinja2
-    tool: promptflow.tools.aoai_gpt4v.AzureOpenAI.chat
+    tool: promptflow.tools.aoai_gpt4v1.AzureOpenAI.chat
   inputs:
     connection: oai-sandpit-aueast641617601117_aoai
     deployment_name: gpt-4o2
