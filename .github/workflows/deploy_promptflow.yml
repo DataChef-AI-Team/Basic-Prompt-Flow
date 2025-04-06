@@ -5,7 +5,10 @@ on:
   #push:
   #  branches:
   #    - main  # Adjust to your default branch
-
+permissions:
+  id-token: write  # This is the important line to add
+  contents: read
+  
 jobs:
   deploy:
     runs-on: ubuntu-latest
