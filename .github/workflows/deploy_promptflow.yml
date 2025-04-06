@@ -44,7 +44,7 @@ jobs:
 
       - name: Deploy Prompt Flow
         run: |
-          pfazure flow create --source . --name test --workspace ${{ secrets.AZURE_ML_WORKSPACE }} --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }}
+          pfazure flow create --flow . --set display_name=testname --subscription ${{ secrets.AZURE_SUBSCRIPTION_ID }} --workspace ${{ secrets.AZURE_ML_WORKSPACE }} --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }}
       #- name: Deploy Prompt Flow
       #  run: |
       #    az ml online-endpoint create --name my-promptflow-endpoint --file flow.dag.yaml --workspace-name ${{ secrets.AZURE_ML_WORKSPACE }} --resource-group ${{ secrets.AZURE_RESOURCE_GROUP }}
