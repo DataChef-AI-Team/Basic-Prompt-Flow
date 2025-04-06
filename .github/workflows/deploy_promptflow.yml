@@ -29,7 +29,7 @@ jobs:
       
       - name: Install Prompt Flow CLI
         run: |
-          pip install promptflow-cli  # Install the Prompt Flow CLI
+          pip install promptflow  # Install the Prompt Flow CLI
 
       - name: Azure Login with OIDC
         uses: azure/login@v1
